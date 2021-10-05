@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProgWeb Quiz</title>
+  <link rel="stylesheet" href="estilos.css" />
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=B8S3rQLklCeR3pmzdBjMyZzzn-00jjuboCwjyqxkwXJ-fbXMNDWT0ejFsv32VD55hPD0SmhOVut0i1NVlVp6hT9Mrw7Y61yGVLuuvsmqLUlU7sAD_0OpwPHr206BXW19wJn42zl8vObDzHw44fLyqfM9Qk9_hRhB6Uzx46cxtzpoAf1gKk7yEEjd0MwYQ1CG" charset="UTF-8"></script></head>
+
+<body>
+  <h1>Quiz - Programação para Web</h1>
+  <div class="questionario">
+    <div id="pergunta"></div>
+    <div class="opcoes">
+      <div class="opcao">
+        <input id="opcao1" type="radio" name="resposta" value="0" />
+        <label id="label-opcao1" for="opcao1"></label>
+      </div>
+      <div class="opcao">
+        <input id="opcao2" type="radio" name="resposta" value="1" />
+        <label id="label-opcao2" for="opcao2"></label>
+      </div>
+      <div class="opcao">
+        <input id="opcao3" type="radio" name="resposta" value="2" />
+        <label id="label-opcao3" for="opcao3"></label>
+      </div>
+      <div class="opcao">
+        <input id="opcao4" type="radio" name="resposta" value="3" />
+        <label id="label-opcao4" for="opcao4"></label>
+      </div>
+    </div>
+    <div class="acoes">
+      <button class="reiniciar" onclick="reiniciarQuestionario()">
+        Reiniciar
+      </button>
+      <button class="proximo" onclick="processarResposta()">
+        Proximo >
+      </button>
+    </div>
+  </div>
+  <div>
+    <span>Pontuação: </span>
+    <span id="pontuacao">0</span>
+  </div>
+  <img src="charada.png" alt="" srcset="" />
+  <script src="script.js"></script>
+</body>
+
+</html>
